@@ -55,7 +55,7 @@ class RSAEngine extends BaseAsymmetricBlockCipher {
   void reset() {}
 
   void init(bool forEncryption,
-      covariant AsymmetricKeyParameter<RSAAsymmetricKey> params) {
+      dynamic params) {
     _forEncryption = forEncryption;
     _key = params.key;
 
